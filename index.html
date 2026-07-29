@@ -3,249 +3,142 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Panther Clothings — Unleash your style with premium athletic streetwear." />
   <title>Panther Clothings — Unleash Your Style</title>
-
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
-
-  <!-- Font Awesome for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- ============== NAVIGATION ============== -->
-  <header class="navbar" id="navbar">
-    <div class="nav-container">
-      <!-- Logo -->
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-inner">
       <a href="#" class="logo">
-        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M12 2 L4 8 L4 16 L8 20 L16 20 L20 16 L20 8 Z" fill="#FFB800" stroke="#FFB800"/>
-          <path d="M8 10 L10 12 L8 14" stroke="#121212" stroke-width="1.5"/>
-          <path d="M16 10 L14 12 L16 14" stroke="#121212" stroke-width="1.5"/>
-        </svg>
-        <span class="logo-text">PANTHER<span class="accent"> CLOTHINGS</span></span>
+        <span class="logo-icon">🐾</span>
+        <span>PANTHER<span class="accent">.</span></span>
       </a>
-
-      <!-- Nav Links -->
-      <nav class="nav-links" id="navLinks">
-        <a href="#home" class="active">Home</a>
+      <nav class="nav-links">
+        <a href="#home">Home</a>
         <a href="#shop">Shop</a>
-        <a href="#collections">Collections</a>
-        <a href="#about">About Us</a>
+        <a href="#about">About</a>
         <a href="#contact">Contact</a>
       </nav>
-
-      <!-- Nav Icons -->
-      <div class="nav-icons">
-        <button class="icon-btn" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
-        <button class="icon-btn" aria-label="Wishlist">
-          <i class="fa-regular fa-heart"></i>
-        </button>
-        <button class="icon-btn cart-btn" id="cartBtn" aria-label="Cart">
-          <i class="fa-solid fa-bag-shopping"></i>
-          <span class="cart-badge" id="cartBadge">0</span>
-        </button>
-        <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
-          <i class="fa-solid fa-bars"></i>
+      <div class="nav-actions">
+        <button class="icon-btn" aria-label="Search">🔍</button>
+        <button class="icon-btn cart-btn" aria-label="Cart">
+          🛒 <span id="cart-count" class="cart-count">0</span>
         </button>
       </div>
     </div>
   </header>
 
-  <!-- ============== HERO SECTION ============== -->
-  <section class="hero" id="home">
+  <!-- HERO -->
+  <section id="home" class="hero">
     <div class="hero-overlay"></div>
     <div class="hero-content">
-      <span class="hero-tag">NEW COLLECTION 2026</span>
-      <h1 class="hero-title">Unleash Your <span class="accent">Style</span></h1>
-      <p class="hero-subtitle">Premium athletic streetwear crafted for those who move with purpose and dress with confidence.</p>
-      <a href="#shop" class="btn btn-primary">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
-    </div>
-    <div class="hero-scroll">
-      <span>Scroll</span>
-      <div class="scroll-line"></div>
+      <p class="hero-tag">NEW COLLECTION 2026</p>
+      <h1 class="hero-title">Unleash Your <span class="accent">Inner Panther</span></h1>
+      <p class="hero-sub">Premium streetwear crafted for those who move in silence and strike with style.</p>
+      <a href="#shop" class="btn btn-primary">Shop Now →</a>
     </div>
   </section>
 
-  <!-- ============== FEATURED CATEGORIES ============== -->
-  <section class="section categories" id="collections">
+  <!-- FEATURES -->
+  <section class="features">
+    <div class="container features-grid">
+      <div class="feature"><span>🚚</span><h4>Free Shipping</h4><p>On orders over $75</p></div>
+      <div class="feature"><span>↩️</span><h4>Easy Returns</h4><p>30-day return policy</p></div>
+      <div class="feature"><span>🔒</span><h4>Secure Payment</h4><p>100% protected checkout</p></div>
+      <div class="feature"><span>💎</span><h4>Premium Quality</h4><p>Handcrafted materials</p></div>
+    </div>
+  </section>
+
+  <!-- SHOP -->
+  <section id="shop" class="shop">
     <div class="container">
-      <div class="section-header">
-        <span class="section-tag">EXPLORE</span>
-        <h2 class="section-title">Shop by Category</h2>
-        <p class="section-subtitle">Curated collections designed for every moment.</p>
+      <div class="section-head">
+        <h2>Featured <span class="accent">Collection</span></h2>
+        <p>Discover our latest arrivals — built for comfort, designed for dominance.</p>
       </div>
 
-      <div class="category-grid">
-        <a href="#" class="category-card">
-          <img src="https://images.unsplash.com/photo-1617137968427-85924c800a22?w=800&q=80" alt="Men" />
-          <div class="category-info">
-            <h3>Men</h3>
-            <span>Shop Now <i class="fa-solid fa-arrow-right"></i></span>
-          </div>
-        </a>
-        <a href="#" class="category-card">
-          <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=800&q=80" alt="Women" />
-          <div class="category-info">
-            <h3>Women</h3>
-            <span>Shop Now <i class="fa-solid fa-arrow-right"></i></span>
-          </div>
-        </a>
-        <a href="#" class="category-card">
-          <img src="https://images.unsplash.com/photo-1556906781-9a412961c28c?w=800&q=80" alt="Streetwear" />
-          <div class="category-info">
-            <h3>Streetwear</h3>
-            <span>Shop Now <i class="fa-solid fa-arrow-right"></i></span>
-          </div>
-        </a>
-        <a href="#" class="category-card">
-          <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=800&q=80" alt="Accessories" />
-          <div class="category-info">
-            <h3>Accessories</h3>
-            <span>Shop Now <i class="fa-solid fa-arrow-right"></i></span>
-          </div>
-        </a>
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="tshirt">T-Shirts</button>
+        <button class="filter-btn" data-filter="hoodie">Hoodies</button>
+        <button class="filter-btn" data-filter="jacket">Jackets</button>
+        <button class="filter-btn" data-filter="pants">Pants</button>
+      </div>
+
+      <div id="products" class="products-grid"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <div class="container about-grid">
+      <div class="about-img"></div>
+      <div class="about-text">
+        <h2>Born From The <span class="accent">Shadows</span></h2>
+        <p>Panther Clothings was founded in 2020 with a single mission: to create apparel that embodies strength, elegance, and mystery. Every piece is designed with precision, stitched with passion, and worn with pride.</p>
+        <p>We believe clothing is more than fabric — it's armor for the modern world.</p>
+        <a href="#shop" class="btn btn-outline">Explore Collection</a>
       </div>
     </div>
   </section>
 
-  <!-- ============== FEATURED PRODUCTS ============== -->
-  <section class="section products" id="shop">
+  <!-- NEWSLETTER -->
+  <section id="contact" class="newsletter">
     <div class="container">
-      <div class="section-header">
-        <span class="section-tag">TRENDING NOW</span>
-        <h2 class="section-title">Featured Products</h2>
-        <p class="section-subtitle">Handpicked styles that define the season.</p>
-      </div>
-
-      <div class="product-grid" id="productGrid">
-        <!-- Products injected by JavaScript -->
-      </div>
+      <h2>Join The <span class="accent">Pack</span></h2>
+      <p>Subscribe and get 15% off your first order.</p>
+      <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thanks for subscribing! 🐾');">
+        <input type="email" placeholder="Enter your email" required />
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
     </div>
   </section>
 
-  <!-- ============== NEWSLETTER ============== -->
-  <section class="section newsletter" id="contact">
-    <div class="container">
-      <div class="newsletter-inner">
-        <div class="newsletter-content">
-          <span class="section-tag">JOIN THE PACK</span>
-          <h2 class="section-title">Get 15% Off Your First Order</h2>
-          <p>Subscribe to our newsletter for exclusive drops, style tips, and members-only deals.</p>
-        </div>
-        <form class="newsletter-form" id="newsletterForm" novalidate>
-          <div class="input-group">
-            <i class="fa-regular fa-envelope"></i>
-            <input type="email" id="newsletterEmail" placeholder="Enter your email address" required />
-          </div>
-          <button type="submit" class="btn btn-primary">Subscribe</button>
-          <p class="form-message" id="formMessage"></p>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============== FOOTER ============== -->
+  <!-- FOOTER -->
   <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-col">
-          <a href="#" class="logo footer-logo">
-            <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M12 2 L4 8 L4 16 L8 20 L16 20 L20 16 L20 8 Z" fill="#FFB800" stroke="#FFB800"/>
-            </svg>
-            <span class="logo-text">PANTHER<span class="accent"> CLOTHINGS</span></span>
-          </a>
-          <p class="footer-bio">Premium athletic streetwear for the bold and fearless. Crafted with precision, worn with pride.</p>
-          <div class="social-links">
-            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
-            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
-          </div>
-        </div>
-
-        <div class="footer-col">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">Collections</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Blog</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>Customer Service</h4>
-          <ul>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Shipping Info</a></li>
-            <li><a href="#">Returns & Exchanges</a></li>
-            <li><a href="#">Size Guide</a></li>
-            <li><a href="#">FAQs</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>Contact</h4>
-          <ul class="contact-list">
-            <li><i class="fa-solid fa-location-dot"></i> 123 Panther Ave, NYC</li>
-            <li><i class="fa-solid fa-phone"></i> +1 (555) 123-4567</li>
-            <li><i class="fa-solid fa-envelope"></i> hello@pantherclothings.com</li>
-          </ul>
-        </div>
+    <div class="container footer-grid">
+      <div>
+        <h3 class="logo">🐾 PANTHER<span class="accent">.</span></h3>
+        <p>Premium streetwear for the bold.</p>
       </div>
-
-      <div class="footer-bottom">
-        <p>&copy; 2026 Panther Clothings. All rights reserved.</p>
-        <div class="footer-bottom-links">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Service</a>
+      <div>
+        <h4>Shop</h4>
+        <ul><li>T-Shirts</li><li>Hoodies</li><li>Jackets</li><li>Pants</li></ul>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <ul><li>Contact Us</li><li>Shipping</li><li>Returns</li><li>FAQ</li></ul>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <div class="socials">
+          <a href="#">Instagram</a><a href="#">Twitter</a><a href="#">TikTok</a>
         </div>
       </div>
     </div>
+    <div class="copyright">© 2026 Panther Clothings. All rights reserved.</div>
   </footer>
 
-  <!-- ============== CART DRAWER ============== -->
-  <div class="cart-overlay" id="cartOverlay"></div>
-  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+  <!-- CART SIDEBAR -->
+  <div id="cart-overlay" class="cart-overlay"></div>
+  <aside id="cart-sidebar" class="cart-sidebar">
     <div class="cart-header">
-      <h3>Your Cart <span id="cartCount">(0)</span></h3>
-      <button class="close-cart" id="closeCart" aria-label="Close cart">
-        <i class="fa-solid fa-xmark"></i>
-      </button>
+      <h3>Your Cart</h3>
+      <button id="close-cart" class="icon-btn">✕</button>
     </div>
-
-    <div class="cart-body" id="cartBody">
-      <div class="cart-empty" id="cartEmpty">
-        <i class="fa-solid fa-bag-shopping"></i>
-        <p>Your cart is empty</p>
-        <span>Start shopping to add items.</span>
-      </div>
-      <ul class="cart-items" id="cartItems"></ul>
-    </div>
-
-    <div class="cart-footer" id="cartFooter">
+    <div id="cart-items" class="cart-items"></div>
+    <div class="cart-footer">
       <div class="cart-total">
-        <span>Subtotal</span>
-        <strong id="cartSubtotal">$0.00</strong>
+        <span>Total:</span>
+        <span id="cart-total">$0.00</span>
       </div>
-      <p class="cart-note">Shipping and taxes calculated at checkout.</p>
-      <button class="btn btn-primary btn-block" id="checkoutBtn">Checkout</button>
+      <button class="btn btn-primary btn-block">Checkout →</button>
     </div>
   </aside>
-
-  <!-- ============== TOAST NOTIFICATION ============== -->
-  <div class="toast" id="toast">
-    <i class="fa-solid fa-check-circle"></i>
-    <span id="toastMessage">Item added to cart</span>
-  </div>
 
   <script src="script.js"></script>
 </body>
